@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="zwaf:template" content="index.default.html">
+	<title>Zuar Rapid Portal</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+		integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+		integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<div class="">
+		<div class="row">
+			<div class="col-sm-2">
+				<aside class="p-3 menu">
+					<ul class="list-unstyled ps-0">
+						<li class="mb-1">
+							<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+								data-bs-target="#home-collapse" aria-expanded="false">
+								Homea
+							</button>
+							<div class="collapse" id="home-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li><a href="#" class="link-dark rounded">Overview</a></li>
+									<li><a href="#" class="link-dark rounded">Updates</a></li>
+									<li>
+										<a href="#" class="link-dark rounded">
+											<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+												data-bs-target="#home2-collapse" aria-expanded="false">
+												Home 2
+											</button>
+										</a>
+										<div class="collapse" id="home2-collapse">
+											<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+												<li><a href="#" class="link-dark rounded">Overview</a></li>
+												<li><a href="#" class="link-dark rounded">Updates</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+								data-bs-target="#dashboard-collapse" aria-expanded="false">
+								Dashboard
+							</button>
+							<div class="collapse" id="dashboard-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li><a href="#" class="link-dark rounded">Overview</a></li>
+									<li><a href="#" class="link-dark rounded">Weekly</a></li>
+									<li><a href="#" class="link-dark rounded">Monthly</a></li>
+									<li><a href="#" class="link-dark rounded">Annually</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse"
+								data-bs-target="#orders-collapse" aria-expanded="true">
+								Orders
+							</button>
+							<div class="collapse show" id="orders-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li><a href="#" class="link-dark rounded">New</a></li>
+									<li><a href="#" class="link-dark rounded">Processed</a></li>
+									<li><a href="#" class="link-dark rounded">Shipped</a></li>
+									<li><a href="#" class="link-dark rounded">Returned</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</aside>
+			</div>
+			<div class="col-sm-9">
+				<div id="tableauViz"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="../js/tableau.js"></script>
+</body>
+
+</html>
